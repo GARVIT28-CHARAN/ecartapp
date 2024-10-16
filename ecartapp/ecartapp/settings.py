@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'orders',
+    'store',
+    'category',
     'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -55,7 +58,7 @@ ROOT_URLCONF = 'ecartapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['tempelates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
